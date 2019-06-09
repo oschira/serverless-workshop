@@ -47,3 +47,4 @@ lab-5/lambda/**/*.json
 # Terraform
 .terraform
 terraform.tfstate
+*.auto.tfvars
