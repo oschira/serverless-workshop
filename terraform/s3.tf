@@ -1,6 +1,8 @@
 resource "aws_s3_bucket" "bucket_upload" {
   bucket = "acg-osc-sfb-upload"
 
+  force_destroy = true
+
   tags = {
     Name        = "acg-osc-sfb-upload"
     Project     = "serverless-workshop"
@@ -10,6 +12,8 @@ resource "aws_s3_bucket" "bucket_upload" {
 
 resource "aws_s3_bucket" "bucket_transcoded" {
   bucket = "acg-osc-sfb-transcoded"
+
+  force_destroy = true
 
   policy = <<POLICY
 {
