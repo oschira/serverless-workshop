@@ -41,6 +41,8 @@ build/Release
 .idea/workspace.xml
 
 sample-videos/
+lab-1/lambda/**/*.json
+!lab-1/lambda/**/package.json
 lab-5/lambda/**/*.json
 !lab-5/lambda/**/package.json
 

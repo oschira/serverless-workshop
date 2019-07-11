@@ -9,7 +9,15 @@ resource "aws_iam_role" "lambda-s3-execute-transcoding" {
     {
       "Action": "sts:AssumeRole",
       "Principal": {
-        "Service": "ec2.amazonaws.com"
+        "Service": "elastictranscoder.amazonaws.com"
+      },
+      "Effect": "Allow",
+      "Sid": ""
+    },
+    {
+      "Action": "sts:AssumeRole",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
       },
       "Effect": "Allow",
       "Sid": ""
